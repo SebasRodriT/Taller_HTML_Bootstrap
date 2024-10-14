@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto Mono', monospace;
+    color: #004553;
+}
+
+a {
+    color: #287f91;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #12029b;
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: #003742;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ff00c8;
+}
+
+
+.card {
+    background-color: #1a1a1a;
+    border: none;
+}
+
+.card-title {
+    color: #00d4ff;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.form-control {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    border: 1px solid #333;
+}
+
+.form-control:focus {
+    background-color: #1a1a1a;
+    color: #fff;
+    border-color: #00d4ff;
+    box-shadow: none;
+}
+.move-on-hover {
+    transition: transform 0.3s;
+}
+
+.move-on-hover:hover {
+    transform: translateY(-10px);
+}
+
+.jump-on-hover {
+    cursor: pointer;
+}
+
+.jump-on-hover:hover {
+    animation: saltar 0.5s ease;
+}
+
+@keyframes saltar {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
